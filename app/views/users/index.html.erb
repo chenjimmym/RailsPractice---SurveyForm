@@ -1,0 +1,21 @@
+
+<form action="/users" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    
+    Your Name: <input type="text" name="user[name]"><br><br>
+     Dojo Location: 
+     <select name="user[location]">
+         <option value="Mountain View">Mountain View</option>
+         <option value="Los Angeles">Los Angeles</option>
+         <option value="Seattle">Seattle</option>
+     </select><br><br>
+     Favorite Language:
+     <select name="user[language]">
+         <option value="Javascript">Javascript</option>
+         <option value="Python">Python</option>
+         <option value="Ruby">Ruby</option>
+     </select><br><br>
+     Comment:
+     <textarea name="user[comment]" rows="4" cols="50"></textarea><br><br>
+     <input type="submit" value="Submit">
+</form>
